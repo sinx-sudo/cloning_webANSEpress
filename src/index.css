@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* fonts */
+@font-face {
+  font-family: 'NotoSansLao';
+  src: url('./assets/fonts/Noto_Sans_Lao/NotoSansLao-VariableFont_wdth\,wght.ttf') format('truetype');
+}
+
+body {
+  font-family: 'NotoSansLao', sans-serif;
+}
+.base-body{
+  @apply bg-[#F7F8F9] min-h-screen
+}
+
+/* animation Raking alert*/
+/* class: animate-ring origin-top */
+@theme {
+  --animate-ring: ring 1s ease-in-out infinite;
+
+  @keyframes ring {
+    0%,100% { transform: rotate(0deg); }
+    10% { transform: rotate(15deg); }
+    20% { transform: rotate(-15deg); }
+    30% { transform: rotate(12deg); }
+    40% { transform: rotate(-12deg); }
+    50% { transform: rotate(8deg); }
+    60% { transform: rotate(-8deg); }
+    70% { transform: rotate(4deg); }
+    80% { transform: rotate(-4deg); }
+  }
+}

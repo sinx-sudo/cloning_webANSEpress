@@ -1,8 +1,10 @@
-import React from 'react'
+import Delivery from '../components/condition/delivery';
 
 const DeliveryCondition = () => {
   return (
-    <div>DeliveryCondition</div>
+    <div>
+      <Delivery/>
+    </div>
   )
 }
 

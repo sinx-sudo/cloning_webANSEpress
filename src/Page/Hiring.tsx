@@ -1,8 +1,10 @@
 import React from 'react'
-
+import HiringCompo from "../components/hiring/Hiring"
 const Hiring = () => {
   return (
-    <div>Hiring</div>
+    <div>
+      <HiringCompo/>
+    </div>
   )
 }
 

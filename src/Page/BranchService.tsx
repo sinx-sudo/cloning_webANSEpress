@@ -1,8 +1,8 @@
 import React from 'react'
-
+import BService from "../components/branchService/Service"
 const BranchService = () => {
   return (
-    <div>BranchService</div>
+    <div><BService/></div>
   )
 }
 

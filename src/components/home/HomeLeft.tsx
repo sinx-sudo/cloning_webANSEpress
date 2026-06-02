@@ -7,6 +7,7 @@ import hero2 from "../../assets/ads/sider-hero2.jpg";
 import hero3 from "../../assets/ads/sider-hero3.jpg";
 import hero4 from "../../assets/ads/sider-hero4.jpg";
 import shopThL from "../../assets/ads/ads-shop.jpg";
+import waranty from "../../assets/images/waranty.jpg"
 import { Link } from 'react-router';
 
 const images = [hero1, hero2, hero3, hero4];
@@ -30,13 +31,13 @@ const HomeLeft = () => {
             {/* carousal */}
             <div>
                 <Card>
-                    <div className="w-[600px] h-[300px] flex justify-center items-center mx-auto">
-                        <div className="relative w-[5500px] h-[250px] overflow-hidden rounded-xl">
+                    <div className="w-full md:w-[600px] md:h-[300px] flex justify-center items-center mx-auto">
+                        <div className="relative w-[300px] h-[100px] md:w-[5500px] md:h-[250px] overflow-hidden rounded-xl">
                             {images.map((image, index) => (
                                 <img
                                     key={index}
                                     src={image}
-                                    alt=""
+                                    alt="..."
                                     className={`
             absolute inset-0 w-full h-full object-cover
             transition-opacity duration-1000
@@ -54,24 +55,24 @@ const HomeLeft = () => {
             <div>
                 <div className='flex justify-between'>
                     <div>
-                        <span className='font-bold text-xl'>ກິດຈະກຳ ແລະ </span>
-                        <span className="font-bold text-xl text-red-500">ຂ່າວສານ</span>
+                        <span className='font-bold text-2xl'>ກິດຈະກຳ ແລະ </span>
+                        <span className="font-bold text-2xl text-red-500">ຂ່າວສານ</span>
                     </div>
                     <div>
-                        <Link to=""><span className='text-gray-600 font-bold'>ເພີ່ມເຕີມ</span></Link>
+                        <Link to=""><span className='text-gray-600 font-bold duration-200 hover:text-red-500 hover:border-b'>ເພີ່ມເຕີມ</span></Link>
                     </div>
                 </div>
                 <div className="flex gap-10 pt-5">
                     <div className='rounded-lg w-[300px] h-[380px] overflow-hidden'>
-                        <img src={shopThL} alt="shop online"
-                            className='rounded-lg transition-transform duration-300 hover:scale-110' />
+                        <img src={waranty} alt="shop online"
+                            className='rounded-lg transition-transform duration-300 hover:scale-110 w-full h-[300px]' />
                         <div className='pt-5'>
                             <span className='text-xl font-bold hover:text-red-500'>ການປະກັນພັດສະດຸ</span>
                         </div>
                     </div>
                     <div className='rounded-lg w-[300px] h-[380px] overflow-hidden'>
                         <img src={shopThL} alt="shop online"
-                            className='rounded-lg transition-transform duration-300 hover:scale-110' />
+                            className='rounded-lg transition-transform duration-300 hover:scale-110 w-full h-[300px]' />
                         <div className='pt-5'>
                             <span className='text-xl font-bold hover:text-red-500'>ໄທ-ລາວ ຮັບສັ່ງເຄື່ອງ ແລະ ເກັບປາຍທາງ COD</span>
                         </div>

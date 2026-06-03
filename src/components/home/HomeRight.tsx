@@ -58,7 +58,7 @@ const HomeRight = () => {
                     {products.map((text, index) => (
                       <div
                         key={index}
-                        className="h-10 flex justify-between items-center"
+                        className="h-10 flex justify-between items-center px-2"
                       >
                         <div className="text-red-400">
                           {text.name}

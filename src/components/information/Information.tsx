@@ -32,31 +32,17 @@ const Information = () => {
                 className="w-[150px] h-[150px] md:w-[300px] md:h-[350px] 
               rounded-md object-cover relative transition-all duration-300 group-hover:scale-110 overflow-hidden"
               />
-              {/* <div className='bg-gradient-to-t from-black/50 absolute top-0 w-[300px] h-[300px]'>
-              </div> */}
-              <div className='absolute top-70 flex flex-col px-5 
-              transition-all duration-300 group-hover:translate-y-2 '>
-                <span className='text-white bg-green-600 rounded-2xl px-5 py-1'>ການແຈ້ງເຕືອນPop Up ຢູ່ແອັບ</span>
-                <span className='text-xl font-semibold text-gray-400'>
-                  ການປະກັນພັດສະດຸ
-                </span>
-              </div>
+              
             </div>
           </div>
-          <div className='flex justify-center items-center'>
-            <div className="ralative group">
+          <div className='flex justify-center items-center transition-all duration-300'>
+            <div className="relative group">
               <img
                 src={ansShop}
                 alt="shopOnline"
                 className="w-[150px] h-[150px] md:w-[300px] md:h-[350px] 
-              rounded-md object-cover relative transition-all duration-300 group-hover:scale-110 overflow-hidden"
+              rounded-md object-cover relative transition-all duration-300 group-hover:scale-110 overflow-hidden group-hover:-rotate-10 group-hover:shadow-red-400/50 "
               />
-              <div className='absolute top-90 flex flex-col px-5 transition-all duration-300 group-hover:translate-y-2'>
-                <span className='text-white bg-green-600 rounded-2xl px-5 py-1'>ການແຈ້ງເຕືອນPop Up ຢູ່ແອັບ</span>
-                <span className='text-xl font-semibold text-gray-400'>
-                  ໄທ-ລາວຮັບສັ່ງເຄື່ອງ <br />ແລະ ເກັບປາຍທາງ COD
-                </span>
-              </div>
             </div>
           </div>
         </div>

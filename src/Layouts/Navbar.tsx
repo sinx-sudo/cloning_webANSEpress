@@ -87,7 +87,7 @@ const Navbar = () => {
                 <div
                     className={`
                             fixed top-0 left-0 h-[50px] w-full
-                            bg-[#F7F8F9] text-gray-400 p-2
+                            bg-white text-gray-400 p-2
                             transition-all duration-300
                             ${isOpen ? "h-[150px]" : "h-[60px]"}`}>
                     {/* Header */}
@@ -100,10 +100,10 @@ const Navbar = () => {
                         />
                     </div>
                     <hr />
-                    <nav className={`flex flex-col gap-2 transition-all duration-300 mt-2 ${isOpen ? "translate-y-0 opacity-100 " : "opacity-0 -translate-y-4"}`}>
+                    <nav className={`flex flex-col gap-2 transition-all duration-300 mt-2 ${isOpen ? "translate-y-0 opacity-100 " : "opacity-0 -translate-y-4 hidden"}`}>
 
                         {/* Nav link menu */}
-                        <div className="flex flex-col gap-5">
+                        <div className="flex flex-col gap-5 mx-auto">
 
                             <div className='flex gap-10'>
                                 <div className=
